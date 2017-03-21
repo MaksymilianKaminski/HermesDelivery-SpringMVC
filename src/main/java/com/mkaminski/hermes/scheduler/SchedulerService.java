@@ -1,6 +1,5 @@
 package com.mkaminski.hermes.scheduler;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +27,6 @@ public class SchedulerService {
 	public void mailReminder() {
 		List<Courier> couriers = courierService.findAll();
 		List<Order> orders = orderService.findAll();
-		List<String> list = new ArrayList<>();
 		String infoOrder;
 		String infoId;
 		String sign = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
