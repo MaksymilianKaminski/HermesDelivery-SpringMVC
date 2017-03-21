@@ -21,7 +21,7 @@ Used technologies:
 - Bootstrap
 
 <h1>INFO</h1></br>
-still developing ...
+still developing ...</br>
 After compile adjust hibernate.properties and next SET role='ADMIN' (more options)
 
 Kindly regards, Maksymilian Kamiński
