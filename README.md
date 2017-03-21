@@ -23,4 +23,5 @@ Used technologies:
 <h1>INFO</h1></br>
 After compile adjust hibernate.properties and next SET role='ADMIN' (more options) </br>
 Still developing ...</br>
+</br>
 Kindly regards, Maksymilian Kamiński
