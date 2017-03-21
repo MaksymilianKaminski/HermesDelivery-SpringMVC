@@ -2,8 +2,6 @@
 
 Project in Java - Spring Framework
 
-INFO: still developing ...
-
 The platform is responsible for handling courier's service:
 - add courier <ADMIN, USER>
 - add package
@@ -21,3 +19,9 @@ Used technologies:
 - Html
 - Css
 - Bootstrap
+
+<h1>INFO</h1></br>
+still developing ...
+After compile adjust hibernate.properties and next SET role='ADMIN' (more options)
+
+Kindly regards, Maksymilian Kamiński
