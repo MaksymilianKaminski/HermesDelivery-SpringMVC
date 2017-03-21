@@ -15,6 +15,7 @@ Used technologies:
 - Spring MVC
 - Spring security
 - Hibernate
+- Tomcat
 - MySql
 - Html
 - Css
