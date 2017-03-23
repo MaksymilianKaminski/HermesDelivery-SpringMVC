@@ -14,6 +14,7 @@ import com.mkaminski.hermes.service.OrderService;
 
 @Service
 public class SchedulerService {
+	
 	@Autowired
 	private CourierService courierService;
 
@@ -38,7 +39,7 @@ public class SchedulerService {
 			infoId = "Courier: " + courier.getFirstName() + " " + courier.getLastName() + " with id: "
 					+ courier.getId();
 			for (Order order : orders) {
-				if (order.getCourier().getFirstName().equals(courier.getFirstName())) {
+				if (order.getCourier().getId().equals(courier.getId())) {
 
 					infoOrder = order.getPack() + "\n" + order.getStatus() + "\n" + order.getCreatedDate();
 
