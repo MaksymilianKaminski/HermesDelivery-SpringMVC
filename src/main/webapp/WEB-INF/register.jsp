@@ -4,6 +4,11 @@
 <c:url value="/register" var="registerURL" />
 <c:url value="/login" var="loginURL" />
 
+<div class="container-fluid png-size">
+	<img class="img-responsive img-max" src="resources/img/hermes.png"
+		alt="" >
+</div>
+
 <div class="container">
 	<div class="alert alert-danger card card-container">
 		<h4>Create your personal account</h4>

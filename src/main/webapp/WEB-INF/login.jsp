@@ -4,6 +4,11 @@
 <c:url value="/login" var="loginURL" />
 <c:url value="/register" var="registerURL" />
 
+<div class="container-fluid png-size">
+	<img class="img-responsive img-max" src="resources/img/hermes.png"
+		alt="" >
+</div>
+
 <div class="container">
 
 	<c:if test="${param.logout != null}">
