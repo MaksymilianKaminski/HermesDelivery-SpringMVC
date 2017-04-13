@@ -17,6 +17,7 @@ Used technologies:
 - Hibernate
 - Tomcat
 - MySql
+- JSP
 - Html
 - Css
 - Bootstrap
