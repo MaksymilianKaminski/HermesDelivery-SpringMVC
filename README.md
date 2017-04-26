@@ -3,9 +3,16 @@
 Project in Java - Spring Framework
 
 The platform is responsible for handling courier's service:
-- add courier <ADMIN, USER>
+- create an account
+- sign in <ADMIN, USER>
+- add courier
+- show list of couriers
 - add package
+- show list of packages
 - create order
+- show list of orders
+- update file/files
+- set role to ADMIN
 
 In addition an email's notification applied after registration. </br>
 Additionally used reminder about courier's orders.
@@ -15,6 +22,7 @@ Used technologies:
 - Spring MVC
 - Spring security
 - Hibernate
+- Maven
 - Tomcat
 - MySql
 - JSP
