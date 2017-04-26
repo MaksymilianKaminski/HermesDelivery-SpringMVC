@@ -15,6 +15,4 @@
 </div>
 
 
-
-
 <%@ include file="/WEB-INF/include/footer.jsp"%>

@@ -2,6 +2,7 @@ package com.mkaminski.hermes.service;
 
 import com.mkaminski.hermes.dao.CourierDao;
 import com.mkaminski.hermes.model.Courier;
+import com.mkaminski.hermes.model.Courier.Role;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -60,5 +61,12 @@ public class CourierServiceImpl implements CourierService {
 	@Override
 	public Courier findOne(Long id) {
 		return courierDao.findOne(id);
+	}
+
+	@Override
+	public void updateRole(String email) {
+		Courier courier = courierDao.findByEmail(email);
+		courier.setRole(Role.ADMIN);	
+		courierDao.save(courier);
 	}
 }

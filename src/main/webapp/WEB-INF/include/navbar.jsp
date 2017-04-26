@@ -10,16 +10,28 @@
 <c:url value="/pack/create" var="createPackUrl" />
 
 <c:url value="/orders" var="ordersUrl" />
+<c:url value="upload" var="uploadUrl" />
+<c:url value="uploadMulti" var="uploadMultiUrl" />
 
 <c:url value="/" var="mainURL" />
 <c:url value="/account" var="accountURL" />
+<c:url value="/updateAdmin" var="updateAdminURL" />
 
 <div>
 	<form class="nav navbar-nav navbar-left">
 		<li><a href="${mainURL}" class="btn btn-primary btn btn-default">Hermes
 				Delivery</a></li>
 	</form>
+	
 </div>
+
+	<div>
+		<form action="${updateAdminURL}" method="post" class="nav navbar-nav navbar-left">	
+			<button class="btn btn-primary"
+				type="submit" >SET ADMIN</button>
+		</form>	
+</div>
+
 <nav class="nav navbar-nav navbar-right ">
 	<ul class="nav navbar-nav">
 		<div class="container-fluid">
@@ -59,6 +71,17 @@
 				</ul></li>
 			<li><a href="${ordersUrl}" class="btn btn-info btn btn-default">Courier's
 					orders</a></li>
+									
+					<li class="dropdown"><a href="#"
+				class="dropdown-toggle btn btn-success btn btn-default "
+				data-toggle="dropdown" role="button" aria-haspopup="true"
+				aria-expanded="false">Attachments <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="${uploadUrl}">One file</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="${uploadMultiUrl}">Many files</a></li>
+				</ul></li>
+									
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<li class="dropdown"><a href="#" class="dropdown-toggle"

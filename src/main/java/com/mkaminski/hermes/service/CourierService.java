@@ -12,4 +12,6 @@ public interface CourierService extends UserDetailsService {
 	List<Courier> findAll();
 	void delete(Long id);
 	Courier findOne(Long id);
+	void updateRole(String email);
+	
 }

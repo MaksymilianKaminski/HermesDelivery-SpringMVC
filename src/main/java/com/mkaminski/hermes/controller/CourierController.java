@@ -83,9 +83,14 @@ public class CourierController {
         return "courier-create";
     }
     
-    
-    
-   
+    @RequestMapping(value = "/updateAdmin", method = RequestMethod.POST)
+    public String updateCourier(Model model, Principal principal) {
+
+    	String email = principal.getName(); 
+        courierService.updateRole(email);;
+        
+        return "main";
+    }
     
     
 

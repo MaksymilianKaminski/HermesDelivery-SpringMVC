@@ -24,7 +24,7 @@ public class SchedulerService {
 	@Autowired
 	private EmailService emailService;
 
-	@Scheduled(fixedDelay = 120 * 1000)
+	@Scheduled(fixedDelay = 250 * 1000)
 	public void mailReminder() {
 		List<Courier> couriers = courierService.findAll();
 		List<Order> orders = orderService.findAll();
