@@ -13,6 +13,8 @@ The platform is responsible for handling courier's service:
 - show list of orders
 - update file/files
 - set role to ADMIN
+- courier's account
+- logout
 
 In addition an email's notification applied after registration. </br>
 Additionally used reminder about courier's orders.
