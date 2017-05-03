@@ -1,7 +1,7 @@
 # HermesDelivery-SpringMVC
-</br>
+
 ![alt text](https://github.com/MaksymilianKaminski/HermesDelivery-SpringMVC/blob/master/main.jpg)
-</br>
+
 Project in Java - Spring Framework
 
 The platform is responsible for handling courier's service:
