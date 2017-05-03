@@ -3,6 +3,7 @@ package com.mkaminski.hermes.controller;
 import java.security.Principal;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,14 +13,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.mkaminski.hermes.model.Courier;
+import com.mkaminski.hermes.model.Courier.Role;
 import com.mkaminski.hermes.service.CourierService;
 
 @Controller
 public class CourierController {
 
-    @Autowired
+	private static final Logger LOGGER = Logger.getLogger(CourierController.class);
+	
+	@Autowired
     private CourierService courierService;
-
 
     @RequestMapping(value = "/couriers", method = RequestMethod.GET)
     public String getCouriersPage(Model model) {
@@ -84,15 +87,16 @@ public class CourierController {
     }
     
     @RequestMapping(value = "/updateAdmin", method = RequestMethod.POST)
-    public String updateCourier(Model model, Principal principal) {
+    public String updateCourier(Principal principal) {
 
     	String email = principal.getName(); 
-        courierService.updateRole(email);;
+    	if (courierService.findByEmail(email).getRole().equals(Role.ADMIN)) {
+    		LOGGER.error("USER SAVED AS ADMIN!!!");
+            
+            return "main";
+		}
+        courierService.updateRole(email);
         
         return "main";
     }
-    
-    
-
-
 }
