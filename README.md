@@ -7,6 +7,7 @@ Project in Java - Spring Framework
 The platform is responsible for handling courier's service:
 - create an account
 - sign in <ADMIN, USER>
+- logout
 - add courier
 - show list of couriers
 - add package
@@ -16,7 +17,8 @@ The platform is responsible for handling courier's service:
 - update file/files
 - set role to ADMIN
 - courier's account
-- logout
+- logger
+
 
 In addition an email's notification applied after registration. </br>
 Additionally used reminder about courier's orders.
