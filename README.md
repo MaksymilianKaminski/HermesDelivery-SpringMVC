@@ -38,4 +38,4 @@ Still developing ...</br>
 </br>
 Kindly regards, Maksymilian Kamiński
 
-![alt text](https://drive.google.com/file/d/0B07xUdl5yzkjUmtQM3NYc0JzdG8/view?usp=sharing)
+![alt text](https://github.com/MaksymilianKaminski/HermesDelivery-SpringMVC/blob/master/main.jpg)
