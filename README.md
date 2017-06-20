@@ -26,7 +26,8 @@ Additionally used reminder about courier's orders.
 Used technologies:
 - Java 
 - Spring MVC
-- Spring security
+- Spring Security
+- Spring Data
 - Hibernate
 - Maven
 - Tomcat
@@ -35,6 +36,7 @@ Used technologies:
 - Html
 - Css
 - Bootstrap
+- JUnit
 
 <h1>INFO</h1></br>
 After compile adjust hibernate.properties and next SET role='ADMIN' (more options) </br>
